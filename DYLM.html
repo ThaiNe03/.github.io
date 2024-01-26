@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./dylm.css">
+        <style>
+            #movingButton {
+                position: absolute;
+                left: 625px;
+                top: 562px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#movingButton").mouseover(function(){
+                    $(this).css("left", Math.random() * 500);
+                    $(this).css("top", Math.random() * 500);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Do you love me</h2>
+        <img class="img1" src="https://static.ybox.vn/2023/9/3/1694623123121-hinh-dong-cute-de-thuong.gif" alt="Your GIF">
+        <br>
+        <button class="btnco" id="staticButton">Có</button>
+        <button id="movingButton">Không</button>
+        <script src="./dylm.js"></script>
+    </body>   
+</html>
